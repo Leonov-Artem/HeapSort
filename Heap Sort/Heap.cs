@@ -8,6 +8,10 @@ namespace Heap_Sort
 {
     class Heap<T> where T : IComparable
     {
+        private T[] array;
+
+        public Heap(T[] array) => this.array = array;
+
 
     }
 }
