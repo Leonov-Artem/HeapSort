@@ -6,11 +6,8 @@ using System.Threading.Tasks;
 
 namespace Heap_Sort
 {
-    class Program
+    class Heap<T> where T : IComparable
     {
-        static void Main(string[] args)
-        {
 
-        }
     }
 }
