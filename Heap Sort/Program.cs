@@ -10,8 +10,8 @@ namespace Heap_Sort
     {
         static void Main(string[] args)
         {
-            Heap<int> heap = new Heap<int>(new int[] { 7, 3, 15, 4, 20 });
-            heap.BuidHeap(5);
+            Heap<int> heap = new Heap<int>(new int[] { 7, 3, 15, 4, 20, 3 });
+            heap.HeapSort();
         }
     }
 }

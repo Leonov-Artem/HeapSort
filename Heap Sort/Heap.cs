@@ -12,6 +12,15 @@ namespace Heap_Sort
 
         public Heap(T[] array) => this.array = array;
 
+        public void HeapSort()
+        {
+            BuidHeap(array.Length);
+            for (int i = array.Length-1; i > 0; i--)
+            {
+                Swap(0, i);         // меняем местами корень (мак. элемент) и последний элемент
+                BuidHeap(i - 1);    // уменьшаем длину массива на 1 (забываем про макс. элемент) и восстанавливаем свойство кучи
+            }
+        }
         private void BuidHeap(int size)
         {
             for (int i = size - 1; i >= 0; i--)
